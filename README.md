@@ -49,11 +49,17 @@ This will build the Ubuntu Oneiric appliance and deliver it to the ESX host conf
 The ESX Boxgrinder delivery plugin accepts the following list of config parameters:
 
 **esx_host:** the ESX hostname/ipaddress
+
 **esx_user:** the ESX user to use
+
 **esx_password:** the ESX password to use
+
 **datastore:** the ESX datastore to use
+
 **name:** the appliance name.
+
 **memory:** the amount of RAM the appliance will have.
+
 **cpu:** the number of CPUs the appliance will have.
 
 All the config parameters have default values. Use the **--delivery-config** Boxgrinder parameter to configure the appliance upload to fit your needs.
