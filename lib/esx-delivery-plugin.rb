@@ -4,6 +4,8 @@ require 'boxgrinder-build/plugins/base-plugin'
 
 module BoxGrinder
   class ESXDelivery < BasePlugin
+    plugin :type => :delivery, :name => :esx, :full_name  => "Deliver the appliance to an ESX/ESXi host"
+
     def validate
       set_default_config_value('datastore', 'datastore1')
       set_default_config_value('name', @appliance_config.name)
@@ -51,4 +53,3 @@ module BoxGrinder
   end
 end
 
-plugin :class => BoxGrinder::ESXDelivery, :type => :delivery, :name => :esx, :full_name  => "Deliver the appliance to an ESX/ESXi host"
